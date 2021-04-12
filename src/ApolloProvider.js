@@ -21,7 +21,9 @@ const authLink = setContext(() => {
   return authHeaders;
 });
 
-const httpLink = createHttpLink({ uri: "http://localhost:8080" });
+const httpLink = createHttpLink({
+  uri: "https://shielded-caverns-86843.herokuapp.com/",
+});
 
 const client = new ApolloClient({
   link: authLink.concat(httpLink),
