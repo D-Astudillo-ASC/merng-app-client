@@ -30,7 +30,6 @@ function Login(props) {
       props.history.push("/");
     },
     onCompleted: (data) => {
-      console.log("completed: " + JSON.stringify(data));
       setErrors({});
     },
     onError(error) {
