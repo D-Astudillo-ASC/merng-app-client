@@ -101,7 +101,6 @@ function PostPage(props) {
       id,
       postBody,
       postOwner,
-      postOwnerId,
       createdAt,
       comments,
       likes,
